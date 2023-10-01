@@ -1,0 +1,54 @@
+#feedback {
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#feedback h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #800000;
+}
+
+#feedback p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#feedback label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #800000;
+    text-align: left;
+}
+
+#feedback input[type="text"],
+#feedback input[type="email"],
+#feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#feedback textarea {
+    height: 150px;
+}
+
+#feedback button[type="submit"] {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback button[type="submit"]:hover {
+    background-color: #cc0000;
+}

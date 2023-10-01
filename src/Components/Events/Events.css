@@ -1,0 +1,181 @@
+/* Define custom colors */
+                
+:root {
+    --color-primary: #E74C3C;
+    /* red */
+    --color-secondary: #FFC107;
+    /* yellow */
+    --color-background: #F5F5F5;
+    /* light gray */
+    --color-text: #333;
+    /* dark gray */
+}
+/* Style the events section */
+
+#events {
+    padding: 50px 0;
+    background-color: aliceblue;
+}
+
+#events h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#events p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+#events ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#events li {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#events li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#events li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    opacity: 0.8;
+    z-index: -1;
+    transition: opacity 0.5s;
+}
+
+#events li:hover::before {
+    opacity: 1;
+}
+
+#events .icon {
+    display: contents;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+#events .icon-diwali {
+    background-image: url("https://example.com/diwali-icon.png");
+}
+
+#events .icon-holi {
+    background-image: url("https://example.com/holi-icon.png");
+}
+
+#events .icon-navaratri {
+    background-image: url("https://example.com/navaratri-icon.png");
+}
+
+#events .icon-janmashtami {
+    background-image: url("https://example.com/janmashtami-icon.png");
+}
+
+#events .icon-ganesh-chaturthi {
+    background-image: url("https://example.com/ganesh-chaturthi-icon.png");
+}
+
+#events strong {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+#events ul li p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color-text);
+}
+
+#events ul li:first-child::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    transform: translateY(-50%);
+    z-index: 0;
+}
+/* Style the event icons */
+
+#events .icon {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+#events .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* Add a subtle hover effect to event list items */
+
+#events li:hover p {
+    color: var(--color-primary);
+}
+/* Add a "Learn More" button to event list items */
+
+#events li a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+#events li a:hover {
+    background-color: var(--color-secondary);
+}
+/* Add a background image to the section */
+
+#events {
+    background-image: url("https://example.com/background-image.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+/* Add a semi-transparent overlay to the section */
+
+#events::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}

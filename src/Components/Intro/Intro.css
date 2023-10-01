@@ -1,0 +1,103 @@
+#intro {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #intro h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  #intro h2:hover {
+    color: #f44336;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f7bd27, 0 0 50px #f7bd27, 0 0 60px #f7bd27, 0 0 70px #f7bd27;
+  }
+  
+  #intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555555;
+    margin-bottom: 30px;
+  }
+  
+  #intro ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  #intro li {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 10px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    transition: all 0.3s ease;
+  }
+  
+  #intro li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 20px #aaaaaa;
+  }
+  
+  #intro li:hover h3 {
+    color: #333333;
+  }
+  
+  #intro li img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #intro li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #555555;
+  }
+  
+  #intro .icon {
+    display: block;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #555555;
+  }
+  
+  #intro .icon-om:before {
+    content: "\0950";
+    font-family: 'Segoe UI Symbol';
+  }
+  
+  #intro .icon-ganesh:before {
+    content: "\1F54E";
+    font-family: 'Segoe UI Symbol';
+  }
+  
+  #intro .icon-krishna:before {
+    content: "\1F473";
+    font-family: 'Segoe UI Symbol';
+  }
+  
+  #intro .icon-shiva:before {
+    content: "\1F5FF";
+    font-family: 'Segoe UI Symbol';
+  }
+  
+  @media screen and (max-width: 768px) {
+    #intro li {
+        width: 100%;
+    }
+  }

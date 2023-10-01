@@ -1,38 +1,289 @@
-.App {
-  text-align: center;
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+h2:hover {
+    color: #f44336;
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f7bd27, 0 0 50px #f7bd27, 0 0 60px #f7bd27, 0 0 70px #f7bd27;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: justify;
+}
+/* Sections Styles */
+
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/* Image Styles */
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+/* Slideshow Styles */
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+/* Caption Styles */
+
+.caption-container {
+    text-align: center;
+    background-color: #f7bd27;
+    color: #fff;
+    padding: 10px;
+}
+
+.caption-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.caption-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Button Styles */
+
+.prev,
+.next {
+    background-color: #f7bd27;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0;
+}
+
+.glow {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f7bd27, 0 0 50px #f7bd27, 0 0 60px #f7bd27, 0 0 70px #f7bd27;
+}
+/* Gradient Background Effect */
+
+.gradient-background {
+    background: linear-gradient(to bottom right, #f7bd27, #333);
+    color: #fff;
+}
+/* Animated Button Effect */
+
+.animated-button {
+    background-color: #f7bd27;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.animated-button:before {
+    background-color: #333;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+.animated-button:hover:before {
+    height: 0;
+    width: 0;
+}
+/* Hover Flip Effect */
+
+.hover-flip {
+    perspective: 1000px;
+}
+
+.hover-flip:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card {
+    background-color: transparent;
+    border: none;
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+
+.flip-card-inner {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.flip-card-front {
+    background-color: #f7bd27;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.flip-card-back {
+    background-color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back img {
+    max-height: 100%;
+    max-width: 100%;
+}
+/* Slide-in Animation Effect */
+
+.slide-in {
+    animation: slide-in 0.5s ease-out;
+    transform: translateX(-100%);
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.flip-card-back p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+/* Contact Form Styles */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: none;
+    border-bottom: 2px solid #f7bd27;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #f7bd27;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
 }

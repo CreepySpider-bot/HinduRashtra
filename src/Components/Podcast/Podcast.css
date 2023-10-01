@@ -1,0 +1,180 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* distribute items evenly in the row */
+}
+
+.item {
+    width: 100px;
+    /* set a fixed width for each item */
+    height: 50px;
+    /* set a fixed height for each item */
+    background-color: #ccc;
+}
+
+.podcast-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    width: 500px;
+}
+
+.media {
+    flex: 1;
+}
+
+#podcasts h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.media img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.timeline {
+    height: 4px;
+    background-color: #CCCCCC;
+    border-radius: 2px;
+}
+
+.playback-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.playback-buttons button.play::before {
+    content: "\25B6";
+    font-size: 24px;
+}
+
+.playback-buttons button.pause::before {
+    content: "\II";
+    font-size: 24px;
+}
+
+.playback-buttons button.restart::before {
+    content: "\21BA";
+    font-size: 24px;
+}
+
+.speed-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.speed-control label {
+    margin-right: 10px;
+}
+
+.speed-control input[type="range"] {
+    width: 100px;
+}
+
+.speed-indicator {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 10px;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+}
+
+.subtitle p {
+    margin: 0;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.player-name {
+    margin-right: 20px;
+}
+
+.player-name h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.player-name p {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.player-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-time span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.platform-logo {
+    align-self: flex-end;
+}
+
+.platform-logo img {
+    width: 20px;
+    height: auto;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .podcast-block {
+        flex-direction: column;
+    }
+    .media {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .controls {
+        align-items: center;
+    }
+    .player-info {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .player-name {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .platform-logo {
+        align-self: center;
+    }
+}
